@@ -96,7 +96,7 @@ function compareSliderAdmin()
                         <tr>
                             <td style='text-align:center;'>
                               <span class='copier cke' data-copy='[% cs={$row['id']} %]'>  [% cs={$row['id']} %]</span><br> 
-							  <span class='copier tpl' data-copy='&lt;? compareSlider({$row['id']}) ?>'>&lt;? compareSlider({$row['id']}) ?></span>
+							  <span class='copier tpl' data-copy='&lt;?php compareSlider({$row['id']}) ?>'>&lt;? compareSlider({$row['id']}) ?></span>
                             </td>
                             <td style='text-align:center;'>{$row['title']}</td>
                             <td style='text-align:center;'><img src='{$SITEURL}{$row['beforeIMG']}' style='width:50px;height:50px;object-fit:cover;'></td>
