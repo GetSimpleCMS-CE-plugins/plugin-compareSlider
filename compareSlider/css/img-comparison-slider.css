@@ -1,0 +1,37 @@
+img-comparison-slider {
+	visibility: hidden;
+	outline: none;
+  
+	--divider-width:2px;
+	--divider-color:#fff;
+	--divider-shadow:3px 3px 0px rgba(0, 0, 0, 1);
+}
+img-comparison-slider [slot='second'] {
+  display: none;
+}
+img-comparison-slider.rendered {
+  visibility: inherit;
+}
+img-comparison-slider.rendered [slot='second'] {
+  display: unset;
+}
+img-comparison-slider:hover{
+	--default-handle-opacity:0;
+	box-shadow:0 0 15px 5px #666;
+	
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+img-comparison-slider:hover svg.custom-animated-handle{
+	transform:scale(1.2);
+}
+svg.custom-animated-handle{
+	transition:transform .2s;
+}
+.img-comparison-slider img{
+  width: 100%;
+  height: auto;
+}
